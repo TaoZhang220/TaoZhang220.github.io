@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Sections</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation bar - Fixed to the top */
+        .navbar {
+            background-color: #2c3e50;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        .navbar a:hover, .navbar a.active {
+            background-color: #1abc9c;
+            border-radius: 5px;
+        }
+
+        /* Footer - Fixed to the bottom */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Content sections */
+        .content {
+            padding: 100px 20px; /* Leave space for fixed navbar */
+            display: none; /* Initially hide all sections */
+        }
+
+        .content.active {
+            display: block; /* Show only active section */
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        h1 {
+            border-bottom: 2px solid #1abc9c;
+            padding-bottom: 10px;
+        }
+
+        .highlight {
+            border-left: 4px solid #1abc9c;
+            padding-left: 10px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <a href="#about" data-section="about">About</a>
+        <a href="#research" data-section="research">Research</a>
+        <a href="#publications" data-section="publications">Publications</a>
+        <a href="#team" data-section="team">Team</a>
+        <a href="#contact" data-section="contact">Contact</a>
+    </div>
+
+    <!-- Content -->
+    <div class="content" id="about">
+        <h1>Tao Zhang (张韬) </h1>
+        <p class="highlight">My work focuses on exploring new methodologies and pushing the boundaries of discrete geometry, extremal combinatorics, coding theory and designs.</p>
+    
+        <h2>Professional Experiences</h2>
+    <p>
+    Xidian University,   2024.2-- <br>
+	Professor
+    </p>
+    <p>
+    Zhejiang Lab,   2022.7--2024.1 <br>
+	   Research Expert
+    </p>
+    <p>
+    Guangzhou University,   2017.7--2022.6 <br>
+	    Associate Professor
+    </p>
+    <h2>Education</h2>
+	 <p>
+    Zhejiang University， 2012.9--2017.6 <br>
+	   Ph.D. in Mathematics (Advisor: <a href="http://math.cnu.edu.cn/szdw/qtjs/161049.htm" target="_blank">Prof. Gennian Ge</a>)
+    </p>
+    
+    </div>
+
+
+
+    
+    <div class="content" id="research">
+        <h2>Honours and Awards</h2>
+        <ul>
+            <li>2019 Kirkman Medal</li>
+            <li>2019 The Honorable Mention of Doctor thesis for New World Mathematics Awards </li>
+            <li>2018 The Excellent Doctor Dissertations of Zhejiang Province  </li>
+            <li> 2018 The Nomination Award for Excellent Doctor Dissertations of Zhejiang University </li>
+            <li>2015 Scholarship for Doctoral Student by State Key Laboratory of Information Security  </li>
+	    <li>2015 National Scholarship for Outstanding Doctoral Student by the Ministry of Education in China </li>
+        </ul>
+  <h2>Grants</h2>
+          <ul>
+	 <li>2024.1--2025.12, Fundamental Research Funds for the Central Universities </li>
+	 <li>2019.1--2021.12, National Natural Science Foundation of China, Grant 11801109 </li>
+	<li>2018.1--2019.12, Department of Education of Guangdong Province   </li>
+       </ul>
+<h2>Service</h2>
+	<ul>
+	 <li>IEEE Transactions on Information Theory, Associate Editor </li>
+	</ul>
+<h2>Journal Referee</h2>
+	<ul>
+		<li>Inventiones Mathematicae </li>
+            <li> Advances in Mathematics of Communications  </li>
+	    <li>  Algebraic Combinatorics  </li>
+	<li> Designs, Codes and Cryptography </li>
+	<li>Discrete Mathematics	</li>
+	<li>Electronic Journal of Combinatorics	</li>	
+	<li> Finite Fields and Their Applications	</li>	
+     <li>IEEE Transactions on Information Theory </li>
+	 <li> Journal of Combinatorial Theory, Series A</li>	
+	</ul>
+    </div>
+
+
+
+
+		
+
+
+	
+
+    <div class="content" id="publications">
+        <h2>Publications</h2>
+        <ul>
+            <li>Publication 1: <a href="#">Link to publication</a></li>
+            <li>Publication 2: <a href="#">Link to publication</a></li>
+            <li>Publication 3: <a href="#">Link to publication</a></li>
+        </ul>
+
+
+     
+        <article class="item">   
+<h4>35. Classification of semi-regular relative difference sets with gcd(λ, n) = 1 attaining Turyn’s bound</h4>
+ <span>
+      (with  
+        Ka Hin Leung,
+	Bernhard Schmidt,
+ </span>
+  <p>
+Designs, Codes and Cryptography, 2024+
+
+	  
+    </div>
+
+    <div class="content" id="team">
+        <h2>Team</h2>
+        <p>Meet the members of our research team:</p>
+        <ul>
+            <li>Dr. John Doe - Specialist in computational mathematics and AI.</li>
+            <li>Dr. Jane Smith - Focus on data analysis and network theory.</li>
+        </ul>
+    </div>
+
+    <div class="content" id="contact">
+        <h2>Contact Information</h2>
+    <p>
+      <strong>Email:</strong> zhant220@163.com<br>
+    </div>
+
+	
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tao Zhang</p>
+    </footer>
+
+    <!-- JavaScript for toggling sections -->
+    <script>
+        // Select all navigation links and content sections
+        const navLinks = document.querySelectorAll('.navbar a');
+        const sections = document.querySelectorAll('.content');
+
+        // Add click event listeners to navigation links
+        navLinks.forEach(link => {
+            link.addEventListener('click', event => {
+                event.preventDefault(); // Prevent default anchor behavior
+
+                // Remove active class from all links and sections
+                navLinks.forEach(nav => nav.classList.remove('active'));
+                sections.forEach(section => section.classList.remove('active'));
+
+                // Add active class to the clicked link
+                link.classList.add('active');
+
+                // Show the corresponding section
+                const targetSection = document.getElementById(link.dataset.section);
+                targetSection.classList.add('active');
+            });
+        });
+
+        // Show the first section by default
+        document.getElementById('about').classList.add('active');
+        navLinks[0].classList.add('active');
+    </script>
+
+</body>
+</html>
