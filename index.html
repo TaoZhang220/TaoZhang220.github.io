@@ -4,88 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tao Zhang's Homepage</title>
-    <style>
-        /* General styles */
-	    body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #F3F4ED; /* 灰白护眼背景色 */
-    color: #333; /* 确保字体颜色对比度适中 */
-}
-    /*    body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        } */
+	
+<style>
+    /* General styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #F3F4ED; /* 灰白护眼背景色 */
+        color: #333; /* 确保字体颜色对比度适中 */
+    }
 
-        /* Navigation bar - Fixed to the top */
-       .navbar {
+    /* Navigation bar - Fixed to the top */
+    .navbar {
         background-color: #2c3e50;
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
-        max-width: 1200px; /* Set the max width of the navbar */
-        margin: 0 auto; /* Center the navbar */
+        width: 100%; /* 让导航栏覆盖整个屏幕宽度 */
         display: flex;
         justify-content: center;
         z-index: 1000;
         padding: 10px 0;
     }
 
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            padding: 10px 15px;
-            display: block;
-        }
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        padding: 10px 15px;
+        display: block;
+    }
 
-        .navbar a:hover, .navbar a.active {
-            background-color: #1abc9c;
-            border-radius: 5px;
-        }
+    .navbar a:hover, .navbar a.active {
+        background-color: #1abc9c;
+        border-radius: 5px;
+    }
 
-        /* Footer - Fixed to the bottom */
-         footer {
+    /* Footer - Fixed to the bottom */
+    footer {
         position: fixed;
         bottom: 0;
         left: 0;
-        width: 100%;
-        max-width: 1200px; /* 确保内容居中并限制宽度 */
-        margin: 0 auto;
+        width: 100%; /* 让底部栏覆盖整个屏幕宽度 */
         background-color: #2c3e50;
         color: white;
         text-align: center;
         padding: 5px 0; /* 减少内边距来控制高度 */
         font-size: 0.6em; /* 调整字体大小，使其更紧凑 */
     }
-        /* Content sections */
-        .content {
-            padding: 100px 20px; /* Leave space for fixed navbar */
-            display: none; /* Initially hide all sections */
-        }
 
-        .content.active {
-            display: block; /* Show only active section */
-        }
+    /* Content sections */
+    .content {
+        padding: 100px 20px; /* Leave space for fixed navbar */
+        display: none; /* Initially hide all sections */
+    }
 
-        h1, h2 {
-            color: #2c3e50;
-        }
+    .content.active {
+        display: block; /* Show only active section */
+    }
 
-        h1 {
-            border-bottom: 2px solid #1abc9c;
-            padding-bottom: 10px;
-        }
+    h1, h2 {
+        color: #2c3e50;
+    }
 
-        .highlight {
-            border-left: 4px solid #1abc9c;
-            padding-left: 10px;
-            background-color: #f9f9f9;
-        }
-    </style>
+    h1 {
+        border-bottom: 2px solid #1abc9c;
+        padding-bottom: 10px;
+    }
+
+    .highlight {
+        border-left: 4px solid #1abc9c;
+        padding-left: 10px;
+        background-color: #f9f9f9;
+    }
+</style>
+
 </head>
 <body>
 
@@ -99,15 +93,15 @@
 
 
 	
-    <div class="content" id="home">
-	    <div style="display: flex; align-items: center;">
-       <img src="photo.jpg" alt="Tao Zhang" style="width: 100px; height: 100px; margin-right: 20px;">
-        <div>
-            <h1>Tao Zhang (张韬)</h1>
+   <div class="content" id="home"> 
+    <div style="display: flex; align-items: center;">
+        <img src="photo.jpg" alt="Tao Zhang" style="width: 100px; height: 100px; margin-right: 20px;">
+        <div style="flex: 1;"> <!-- 确保文字部分填满剩余空间 -->
+            <h1 style="width: 100%; border-bottom: 2px solid #1abc9c; padding-bottom: 10px;">Tao Zhang (张韬)</h1>
             <p class="highlight">My work focuses on exploring new methodologies and pushing the boundaries of discrete geometry, extremal combinatorics, coding theory and designs.</p>
         </div>
     </div>
-        
+
 	<h2>Professional Experiences</h2>
     <p>  Xidian University,   2024.2-- <br>  Professor  </p>
     <p> Zhejiang Lab,   2022.7--2024.1 <br> Research Expert   </p>
